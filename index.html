@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Student Feedback Collection System</h1>
+    <p>Please give your valuable feedback</p>
+
+    <form action="submit.php" method="post">
+
+        <label>Student Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Department</label>
+        <input type="text" name="department" placeholder="Enter department" required>
+
+        <label>Your Feedback</label>
+        <textarea name="feedback" rows="5" placeholder="Write your feedback here..." required></textarea>
+
+        <input type="submit" name="Submit" value="Submit Feedback">
+
+    </form>
+
+    <br>
+    <a href="view.php" class="link">View All Feedback</a>
+</div>
+
+</body>
+</html>
+
